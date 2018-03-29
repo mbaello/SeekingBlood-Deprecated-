@@ -159,16 +159,11 @@ public class levelActivity extends AppCompatActivity implements
             testCharacter.setX(x);
     }
     protected boolean ValidMove(int x) {
-        if((!movementRegion.contains(x, 0)) && (x <= width))
-            return true;
-        return false;
+        return ((!movementRegion.contains(x, 0)) && (x <= width));
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent event){
-        if (this.gestureDetector.onTouchEvent(event)) {
-            return true;
-        }
         return super.onTouchEvent(event);
     }
 
