@@ -1,0 +1,107 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:2:1-21:12
+MERGED from [com.android.support:appcompat-v7:27.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.0.aar\2763b0e564c065db20b5743d71b6886c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\665e65a321b5ed7fc0f31aceffe80779\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:27.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.0.aar\55027fca85f2a817c4ea67a2cc416815\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.0.aar\56386aa639ae439bd6f249e043cbcb97\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.0.aar\40fb9aa58c93d0a43e0af0332a4902c9\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.0.aar\971122aab481140cce37a888bcc55c70\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.0.aar\e28b25ffc27950ad56b26e025975aa2d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.0.aar\badfb415476709f7a4aa6f9f77792c40\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\972bfcfac4bb7a66c604bf39efa66e29\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\031a4e67072f25032385616473aaacd9\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\8a61f1ad1299aa780122514faea49c01\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\d91d80ad695d7b6695022f12c6a63b41\AndroidManifest.xml:17:1-22:12
+INJECTED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:2:1-21:12
+	package
+		ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:3:5-38
+		INJECTED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml
+		ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:2:1-21:12
+		INJECTED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml
+		ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:2:1-21:12
+		INJECTED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:5:5-19:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\665e65a321b5ed7fc0f31aceffe80779\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\665e65a321b5ed7fc0f31aceffe80779\AndroidManifest.xml:9:5-20
+	android:supportsRtl
+		ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:11:9-40
+activity#sp18.cs370.seekingblood.levelActivity
+ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:12:9-17:20
+	android:name
+		ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:12:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:13:13-16:29
+action#android.intent.action.MAIN
+ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:15:17-77
+	android:name
+		ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:15:27-74
+activity#sp18.cs370.seekingblood.titleActivity
+ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:18:9-60
+	android:name
+		ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:18:19-48
+uses-sdk
+INJECTED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml
+INJECTED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:27.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.0.aar\2763b0e564c065db20b5743d71b6886c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.0.aar\2763b0e564c065db20b5743d71b6886c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\665e65a321b5ed7fc0f31aceffe80779\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\665e65a321b5ed7fc0f31aceffe80779\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:27.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.0.aar\55027fca85f2a817c4ea67a2cc416815\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.0.aar\55027fca85f2a817c4ea67a2cc416815\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.0.aar\56386aa639ae439bd6f249e043cbcb97\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.0.aar\56386aa639ae439bd6f249e043cbcb97\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.0.aar\40fb9aa58c93d0a43e0af0332a4902c9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.0.aar\40fb9aa58c93d0a43e0af0332a4902c9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.0.aar\971122aab481140cce37a888bcc55c70\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.0.aar\971122aab481140cce37a888bcc55c70\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.0.aar\e28b25ffc27950ad56b26e025975aa2d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.0.aar\e28b25ffc27950ad56b26e025975aa2d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.0.aar\badfb415476709f7a4aa6f9f77792c40\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.0.aar\badfb415476709f7a4aa6f9f77792c40\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\972bfcfac4bb7a66c604bf39efa66e29\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\972bfcfac4bb7a66c604bf39efa66e29\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\031a4e67072f25032385616473aaacd9\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\031a4e67072f25032385616473aaacd9\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\8a61f1ad1299aa780122514faea49c01\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\8a61f1ad1299aa780122514faea49c01\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\d91d80ad695d7b6695022f12c6a63b41\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\d91d80ad695d7b6695022f12c6a63b41\AndroidManifest.xml:20:5-44
+INJECTED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml
+INJECTED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml
+		ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml
+		ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml
