@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Repositories\\SeekingBlood\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
+            "outputFile": "/Users/willlucic/Documents/GitHub/SeekingBlood/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Marc\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\2763b0e564c065db20b5743d71b6886c\\res\\values-v23\\values-v23.xml",
+                    "source": "/Users/willlucic/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/1eaa219b847e76e7d1e0b06a5f5eb010/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",

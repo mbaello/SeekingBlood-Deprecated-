@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Repositories\\SeekingBlood\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sv\\values-sv.xml",
+            "outputFile": "/Users/willlucic/Documents/GitHub/SeekingBlood/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sv/values-sv.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Marc\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.0.aar\\badfb415476709f7a4aa6f9f77792c40\\res\\values-sv\\values-sv.xml",
+                    "source": "/Users/willlucic/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/43c5e22c2502894c8a4aed526a1c7b5f/res/values-sv/values-sv.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Marc\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\2763b0e564c065db20b5743d71b6886c\\res\\values-sv\\values-sv.xml",
+                    "source": "/Users/willlucic/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/1eaa219b847e76e7d1e0b06a5f5eb010/res/values-sv/values-sv.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
