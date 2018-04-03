@@ -1,7 +1,6 @@
 package sp18.cs370.seekingblood;
 
 import android.content.pm.ActivityInfo;
-import android.gesture.Gesture;
 import android.graphics.Point;
 import android.graphics.Rect;
 import android.os.Handler;
@@ -18,15 +17,12 @@ import static java.lang.Math.abs;
 public class levelActivity extends AppCompatActivity implements
     GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListener {
 
-    private boolean onGround;           // Boolean that checks if the character is on the ground
+    private Hero hero;                  // Main Character
     private Handler moveHandler;        // Handler used in horizontal movement
     private Handler jumpHandler;        // Handler used in vertical movement
     private int region;                 // Integer that refers to 1 of the 4 movement sub-regions
     private int width;                  // Integer that holds the width of the screen
     private int height;                 // Integer that holds the height of the screen
-    private static int initialVelocity;        // Indicates initial vertical jump velocity
-    private int currentVelocity;        // Indicates current vertical velocity
-    private int gravity;                // Refers to the rate of negative vertical acceleration
     private GestureDetector gestureDetector; // Used to detect unique gestures
     private ImageView testCharacter;    // Refers to a stock image of a knight - can be moved
     private Rect sprintRegionR;         // Sprint Right
@@ -49,6 +45,8 @@ public class levelActivity extends AppCompatActivity implements
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_level);
+        // Create a hero and constants reference
+        hero = new Hero();
         // Forces screen into landscape orientation
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         // Get screen size in pixels
@@ -61,10 +59,7 @@ public class levelActivity extends AppCompatActivity implements
         testCharacter = findViewById(R.id.characterID);
         testCharacter.setX(width / 2);
         testCharacter.setY(height / 2);
-        initialVelocity = -30;
-        currentVelocity = initialVelocity;
-        gravity = 2;
-        onGround = true;
+        hero.setYVelocity(Constants.defaultJumpVelocity);
         // Define the region boundaries
         sprintRegionR = new Rect(0, 0, width / 6, height / 4);
         walkRegionR = new Rect(0, height / 4, width / 6, height / 2);
@@ -171,10 +166,10 @@ public class levelActivity extends AppCompatActivity implements
     }
     protected void Jump() {
         int y = (int)testCharacter.getY();
-        y += currentVelocity;
-        currentVelocity += gravity;
-        if(onGround) {
-            onGround = false;
+        y += hero.getYVelocity();
+        hero.setYVelocity(y + Constants.gravity);
+        if(hero.isOnGround()) {
+            hero.setOnGround(false);
             testCharacter.setY(y);
         } else if(!ReachedGround(y)) {
             System.out.println("Mid-jump!");
@@ -184,13 +179,15 @@ public class levelActivity extends AppCompatActivity implements
             testCharacter.setY(height / 2);
             jumpHandler.removeCallbacks(jumpAction);
             jumpHandler = null;
-            onGround = true;
-            currentVelocity = initialVelocity;
+            hero.setOnGround(true);
+            hero.setYVelocity(Constants.defaultJumpVelocity);
         }
     }
+
     protected boolean ValidMove(int x) {
         return ((!movementRegion.contains(x, 0)) && (x <= width));
     }
+
     protected boolean ReachedGround(int y) {
         return ((floorRegion.contains(0, y)));
     }
@@ -216,7 +213,7 @@ public class levelActivity extends AppCompatActivity implements
         if(deltaY > deltaX) { // Swipe is vertical
             if(event1.getY() > event2.getY()) {
                 System.out.println("Swipe up detected!");
-                if(onGround) {
+                if(hero.isOnGround()) {
                     System.out.println("Initiating jump!");
                     if (jumpHandler != null)
                         return true;
