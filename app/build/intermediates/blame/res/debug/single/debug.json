@@ -748,12 +748,12 @@
         "source": "D:\\Repositories\\SeekingBlood\\app\\src\\main\\res\\layout\\activity_level.xml"
     },
     {
-        "merged": "D:\\Repositories\\SeekingBlood\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\Marc\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\2763b0e564c065db20b5743d71b6886c\\res\\drawable-hdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
-    },
-    {
         "merged": "D:\\Repositories\\SeekingBlood\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_hint_foreground_material_light.xml.flat",
         "source": "C:\\Users\\Marc\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\2763b0e564c065db20b5743d71b6886c\\res\\color\\abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "D:\\Repositories\\SeekingBlood\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\Marc\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\2763b0e564c065db20b5743d71b6886c\\res\\drawable-hdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
         "merged": "D:\\Repositories\\SeekingBlood\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
@@ -1344,12 +1344,12 @@
         "source": "C:\\Users\\Marc\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\2763b0e564c065db20b5743d71b6886c\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
     {
-        "merged": "D:\\Repositories\\SeekingBlood\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
-        "source": "C:\\Users\\Marc\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\2763b0e564c065db20b5743d71b6886c\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_36dp.png"
-    },
-    {
         "merged": "D:\\Repositories\\SeekingBlood\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_title.xml.flat",
         "source": "D:\\Repositories\\SeekingBlood\\app\\src\\main\\res\\layout\\activity_title.xml"
+    },
+    {
+        "merged": "D:\\Repositories\\SeekingBlood\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
+        "source": "C:\\Users\\Marc\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\2763b0e564c065db20b5743d71b6886c\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_36dp.png"
     },
     {
         "merged": "D:\\Repositories\\SeekingBlood\\app\\build\\intermediates\\res\\merged\\debug\\drawable-watch-v20_abc_dialog_material_background.xml.flat",

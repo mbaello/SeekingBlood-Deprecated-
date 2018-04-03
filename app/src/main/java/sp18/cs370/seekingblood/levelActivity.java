@@ -18,9 +18,16 @@ import static java.lang.Math.abs;
 public class levelActivity extends AppCompatActivity implements
     GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListener {
 
-    private boolean onGround;
+    private boolean onGround;           // Boolean that checks if the character is on the ground
+    private Handler moveHandler;        // Handler used in horizontal movement
+    private Handler jumpHandler;        // Handler used in vertical movement
     private int region;                 // Integer that refers to 1 of the 4 movement sub-regions
     private int width;                  // Integer that holds the width of the screen
+    private int height;                 // Integer that holds the height of the screen
+    private static int initialVelocity;        // Indicates initial vertical jump velocity
+    private int currentVelocity;        // Indicates current vertical velocity
+    private int gravity;                // Refers to the rate of negative vertical acceleration
+    private GestureDetector gestureDetector; // Used to detect unique gestures
     private ImageView testCharacter;    // Refers to a stock image of a knight - can be moved
     private Rect sprintRegionR;         // Sprint Right
     private Rect walkRegionR;           // Walk Right
@@ -29,7 +36,7 @@ public class levelActivity extends AppCompatActivity implements
     private Rect currentRegion;         // Region used in movement
     private Rect movementRegion;        // Region that contains all movement sub-regions
     private Rect actionRegion;          // Region that will capture actions unrelated to movement
-    private GestureDetector gestureDetector; // Used to detect unique gestures
+    private Rect floorRegion;           // Region that acts as a floor
 
     /*  REGIONS - Combat and Movement-related regions will have a number associated with them.
      *  Movement regions, starting from the top, are numbered 1-4.
@@ -49,23 +56,27 @@ public class levelActivity extends AppCompatActivity implements
         Point size = new Point();
         display.getSize(size);
         width = size.x;
-        int height = size.y;
-        // Define the test character and set their location
+        height = size.y;
+        // Define the test character, set their location, and set their statuses (Class later)
         testCharacter = findViewById(R.id.characterID);
         testCharacter.setX(width / 2);
         testCharacter.setY(height / 2);
+        initialVelocity = -30;
+        currentVelocity = initialVelocity;
+        gravity = 2;
+        onGround = true;
         // Define the region boundaries
-        sprintRegionR = new Rect(0, 0, width / 4, height / 4);
-        walkRegionR = new Rect(0, height / 4, width / 4, height / 2);
-        walkRegionL = new Rect(0, height / 2, width / 4, (3 * height) / 4);
-        sprintRegionL = new Rect(0, (3 * height) / 4, width / 4, height);
-        movementRegion = new Rect(0, 0, width / 4, height);
-        actionRegion = new Rect(width / 4, 0, width, height);
+        sprintRegionR = new Rect(0, 0, width / 6, height / 4);
+        walkRegionR = new Rect(0, height / 4, width / 6, height / 2);
+        walkRegionL = new Rect(0, height / 2, width / 6, (3 * height) / 4);
+        sprintRegionL = new Rect(0, (3 * height) / 4, width / 6, height);
+        movementRegion = new Rect(0, 0, width / 6, height);
+        actionRegion = new Rect(width / 6, 0, width, height);
+        floorRegion = new Rect(0, (height  * 3) / 4, width, height);
         gestureDetector = new GestureDetector(this);
         // Map the View
         View mainView = findViewById(R.id.baseViewID);
         mainView.setOnTouchListener(new View.OnTouchListener() {
-            Handler handler;
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 region = GetRegionPressed((int)event.getX(), (int)event.getY()); // Check if a movement region was touched
@@ -75,13 +86,13 @@ public class levelActivity extends AppCompatActivity implements
                     switch (event.getAction()) {
                         case MotionEvent.ACTION_DOWN: // Initial Press
                             v.performClick();
-                            if (handler != null)
+                            if (moveHandler != null)
                                 return true;
-                            handler = new Handler();
-                            handler.postDelayed(mAction, 20);
+                            moveHandler = new Handler();
+                            moveHandler.postDelayed(moveAction, 20);
                             break;
                         case MotionEvent.ACTION_MOVE: // While held and finger isn't steady
-                            if (handler == null)
+                            if (moveHandler == null)
                                 return true;
                             else if (region == 1)
                                 currentRegion = sprintRegionR;
@@ -92,21 +103,21 @@ public class levelActivity extends AppCompatActivity implements
                             else if (region == 4)
                                 currentRegion = sprintRegionL;
                             if (!currentRegion.contains((int) event.getX(), (int) event.getY())) {
-                                handler.removeCallbacks(mAction);
-                                handler = null;
+                                moveHandler.removeCallbacks(moveAction);
+                                moveHandler = null;
                             }
                             break;
                         case MotionEvent.ACTION_UP: // Touch released
-                            if (handler == null)
+                            if (moveHandler == null)
                                 return true;
-                            handler.removeCallbacks(mAction);
-                            handler = null;
+                            moveHandler.removeCallbacks(moveAction);
+                            moveHandler = null;
                             break;
                     }
                     return true;
                 }
             }
-            Runnable mAction = new Runnable() {
+            Runnable moveAction = new Runnable() { // Runnable that repeatedly calls move functions
                 @Override
                 public void run() {
                     if(region == 1)
@@ -117,13 +128,13 @@ public class levelActivity extends AppCompatActivity implements
                         WalkLeft();
                     else if(region == 4)
                         SprintLeft();
-                    handler.postDelayed(this, 20);
+                    moveHandler.postDelayed(this, 20);
                 }
             };
         });
     }
 
-    protected int GetRegionPressed(int x, int y) { // 1 = SR, 2 = WR, 3 = WL, 4 = SL
+    protected int GetRegionPressed(int x, int y) {
         if(sprintRegionR.contains(x, y)) {
             return 1;
         } else if(walkRegionR.contains(x, y)) {
@@ -158,8 +169,30 @@ public class levelActivity extends AppCompatActivity implements
         if(ValidMove(x))
             testCharacter.setX(x);
     }
+    protected void Jump() {
+        int y = (int)testCharacter.getY();
+        y += currentVelocity;
+        currentVelocity += gravity;
+        if(onGround) {
+            onGround = false;
+            testCharacter.setY(y);
+        } else if(!ReachedGround(y)) {
+            System.out.println("Mid-jump!");
+            testCharacter.setY(y);
+        } else {
+            System.out.println("Touched floor!");
+            testCharacter.setY(height / 2);
+            jumpHandler.removeCallbacks(jumpAction);
+            jumpHandler = null;
+            onGround = true;
+            currentVelocity = initialVelocity;
+        }
+    }
     protected boolean ValidMove(int x) {
         return ((!movementRegion.contains(x, 0)) && (x <= width));
+    }
+    protected boolean ReachedGround(int y) {
+        return ((floorRegion.contains(0, y)));
     }
 
     @Override
@@ -181,8 +214,16 @@ public class levelActivity extends AppCompatActivity implements
         int deltaX = abs((int)(event1.getX() - event2.getX()));
         int deltaY = abs((int)(event1.getY() - event2.getY()));
         if(deltaY > deltaX) { // Swipe is vertical
-            if(event1.getY() > event2.getY())
+            if(event1.getY() > event2.getY()) {
                 System.out.println("Swipe up detected!");
+                if(onGround) {
+                    System.out.println("Initiating jump!");
+                    if (jumpHandler != null)
+                        return true;
+                    jumpHandler = new Handler();
+                    jumpHandler.postDelayed(jumpAction, 20);
+                }
+            }
             else
                 System.out.println("Swipe down detected!");
         } else { // Swipe must be horizontal
@@ -193,6 +234,14 @@ public class levelActivity extends AppCompatActivity implements
         }
         return true;
     }
+    Runnable jumpAction = new Runnable() {
+        @Override
+        public void run() {
+            Jump();
+            if(jumpHandler != null)
+                jumpHandler.postDelayed(jumpAction, 20);
+        }
+    };
 
     @Override
     public void onLongPress(MotionEvent event) {
