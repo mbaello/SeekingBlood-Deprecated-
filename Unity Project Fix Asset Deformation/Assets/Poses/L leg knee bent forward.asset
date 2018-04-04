@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae0543fe805424df99fe08ce744cbe49, type: 3}
+  m_Name: L leg knee bent forward
+  m_EditorClassIdentifier: 
+  m_PoseEntries:
+  - path: Bones/Back
+    localPosition: {x: 4.2899995, y: 3.389999, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.7069101, w: 0.70730346}
+    localScale: {x: 17.543219, y: 17.860342, z: 17.860342}
+  - path: Bones/Back/Neck-Head
+    localPosition: {x: 1.0000021, y: 0.00000010679239, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.30510327, w: 0.9523193}
+    localScale: {x: 0.51159686, y: 0.511597, z: 0.511597}
+  - path: Bones/Back/Neck-Head/Visor
+    localPosition: {x: 0.359, y: -0.15, z: 0.08142888}
+    localRotation: {x: -0, y: -0, z: -0.6842579, w: 0.7292402}
+    localScale: {x: 0.7546969, y: 0.7546969, z: 0.7546969}
+  - path: Bones/Back/Fore Arm Bicept
+    localPosition: {x: 0.695, y: -0.11, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.9842189, w: -0.17695537}
+    localScale: {x: 0.7446017, y: 0.7702909, z: 0.8611783}
+  - path: Bones/Back/Fore Arm Bicept/Fore Forearm
+    localPosition: {x: 0.81424, y: 0.011473, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.40839878, w: 0.9128036}
+    localScale: {x: 0.73585784, y: 0.80889714, z: 0.7358578}
+  - path: Bones/Back/Fore Arm Bicept/Fore Forearm/Elbow
+    localPosition: {x: -0.001768382, y: 0.0017156431, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.65231955, w: 0.75794405}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Back/Fore Arm Bicept/Fore Forearm/Fore Hand
+    localPosition: {x: 0.94503623, y: 0.00521357, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.0048843864, w: 0.9999881}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Back/Rear Arm Bicep
+    localPosition: {x: 0.737, y: 0.013, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.9915584, w: 0.12966128}
+    localScale: {x: 0.7446017, y: 0.7702909, z: 0.8611783}
+  - path: Bones/Back/Rear Arm Bicep/Rear Forearm
+    localPosition: {x: 0.91611, y: -0.011304, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.27378595, w: 0.9617907}
+    localScale: {x: 1, y: 1.0992575, z: 1}
+  - path: Bones/Back/Rear Arm Bicep/Rear Forearm/Read Hand
+    localPosition: {x: 0.573, y: -0.004, z: 0}
+    localRotation: {x: -0, y: -0, z: 0.0006195306, w: 0.9999998}
+    localScale: {x: 0.3221328, y: 0.328942, z: 0.328942}
+  - path: Bones/Back/Rear Arm Bicep/Rear Forearm/Elbow
+    localPosition: {x: 0.0009997536, y: -0.0009997915, z: 0}
+    localRotation: {x: -0, y: -0, z: 0.61043864, w: 0.7920636}
+    localScale: {x: 0.1335082, y: 0.1335082, z: 0.1335082}
+  - path: Bones/Back/Rear Leg Thigh
+    localPosition: {x: -0.039, y: 0.009, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.97177285, w: 0.2359184}
+    localScale: {x: 0.87306356, y: 0.6944, z: 0.8730634}
+  - path: Bones/Back/Rear Leg Thigh/Rear Leg Calf
+    localPosition: {x: 1.0000002, y: 0.00000003166037, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.44575286, w: 0.8951561}
+    localScale: {x: 1.0976613, y: 1.097661, z: 1.097661}
+  - path: Bones/Back/Rear Leg Thigh/Rear Leg Calf/Rear Foot Heel
+    localPosition: {x: 0.9730026, y: 0.0020019335, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.5838672, w: 0.81184924}
+    localScale: {x: 0.35404852, y: 0.3116386, z: 0.3116386}
+  - path: Bones/Back/Rear Leg Thigh/Rear Leg Calf/Rear Foot Heel/Rear Foot Toe
+    localPosition: {x: 1.0000093, y: -0.0000033626263, z: 0}
+    localRotation: {x: 0.001509869, y: -0.0035365007, z: 0.43476802, w: 0.90053433}
+    localScale: {x: 0.36765182, y: 0.36765182, z: 0.36765182}
+  - path: Bones/Back/Fore Leg Thigh
+    localPosition: {x: -0.07566002, y: -0.008300984, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.995768, w: -0.09190261}
+    localScale: {x: 0.8399584, y: 0.6944, z: 0.83995837}
+  - path: Bones/Back/Fore Leg Thigh/Fore Leg Calf
+    localPosition: {x: 1.0000002, y: -0.00000006943094, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.19764507, w: 0.98027366}
+    localScale: {x: 1.18022, y: 1.2036002, z: 1.2036002}
+  - path: Bones/Back/Fore Leg Thigh/Fore Leg Calf/Fore Foot Heel
+    localPosition: {x: 0.97200364, y: 0.002000285, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.59874856, w: 0.8009371}
+    localScale: {x: 0.33978167, y: 0.33978164, z: 0.33978164}
+  - path: Bones/Back/Fore Leg Thigh/Fore Leg Calf/Fore Foot Heel/Fore Foot Toe
+    localPosition: {x: 1.0000021, y: -0.0000017103495, z: 0}
+    localRotation: {x: -0, y: -0, z: 0.35343912, w: 0.9354576}
+    localScale: {x: 0.3698575, y: 0.36948043, z: 0.36948043}
