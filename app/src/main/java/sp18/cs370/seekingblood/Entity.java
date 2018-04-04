@@ -6,15 +6,23 @@ class Entity {
     // variable in their own class.
     private boolean isFacingLeft;
     private boolean isOnGround;
-    private double health;
-    private double xVelocity;
-    private double yVelocity;
+    private float health;
+    private int xVelocity;
+    private int yVelocity;
 
     Entity() {
-        health = 100.0;
-        xVelocity = 0.0;
-        yVelocity = 0.0;
+        health = 100.0f;
+        xVelocity = 0;
+        yVelocity = 0;
         isOnGround = true;
+    }
+
+    public boolean isFacingLeft() {
+        return isFacingLeft;
+    }
+
+    public void setFacingLeft(boolean facingLeft) {
+        isFacingLeft = facingLeft;
     }
 
     public boolean isOnGround() {
@@ -25,27 +33,27 @@ class Entity {
         isOnGround = onGround;
     }
 
-    public double getHealth() {
+    public float getHealth() {
         return health;
     }
 
-    public void setHealth(double health) {
+    public void setHealth(float health) {
         this.health = health;
     }
 
-    public double getXVelocity() {
+    public int getxVelocity() {
         return xVelocity;
     }
 
-    public void setXVelocity(double xVelocity) {
+    public void setxVelocity(int xVelocity) {
         this.xVelocity = xVelocity;
     }
 
-    public double getYVelocity() {
+    public int getyVelocity() {
         return yVelocity;
     }
 
-    public void setYVelocity(double yVelocity) {
+    public void setyVelocity(int yVelocity) {
         this.yVelocity = yVelocity;
     }
 
