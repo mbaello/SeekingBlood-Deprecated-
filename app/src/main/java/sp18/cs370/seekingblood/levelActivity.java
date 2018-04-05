@@ -10,6 +10,8 @@ import android.view.Display;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ImageView;
 
 import static java.lang.Math.abs;
@@ -20,10 +22,11 @@ public class levelActivity extends AppCompatActivity implements
     private Hero hero;                  // Main Character
     private Handler moveHandler;        // Handler used in horizontal movement
     private Handler jumpHandler;        // Handler used in vertical movement
-    private Handler jumpTimerHandler;   // Handler used in complex jumping
     private int region;                 // Integer that refers to a region of the screen
     private int width;                  // Integer that holds the width of the screen
     private int height;                 // Integer that holds the height of the screen
+    private int secondaryX;             // Integer referring to an x-coordinate pre-swipe
+    private int secondaryY;             // Integer referring to a y-coordinate pre-swipe
     private GestureDetector gestureDetector; // Used to detect unique gestures
     private Rect sprintRegionR;         // Sprint Right
     private Rect walkRegionR;           // Walk Right
@@ -33,10 +36,17 @@ public class levelActivity extends AppCompatActivity implements
     private Rect movementRegion;        // Region that contains all movement sub-regions
     private Rect actionRegion;          // Region that will capture actions unrelated to movement
     private Rect floorRegion;           // Region that acts as a floor
+    private ImageView floorView;
+
+    private Rect platformRegion;        // Region that acts as a platform
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // Remove the notification bar from the application
+        getWindow().requestFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        // Set Content View
         setContentView(R.layout.activity_level);
         // Forces screen into landscape orientation
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
@@ -53,6 +63,10 @@ public class levelActivity extends AppCompatActivity implements
         hero.setHeroViewY(height / 2);
         hero.setyVelocity(Constants.defaultJumpVelocity);
         hero.setFacingLeft(false);
+        // Define a platform
+        floorView = findViewById(R.id.platform1ID);
+        floorView.setX(0);
+        floorView.setY((height * 27) / 32);
         // Define the region boundaries
         sprintRegionR = new Rect(0, 0, width / 6, height / 4);
         walkRegionR = new Rect(0, height / 4, width / 6, height / 2);
@@ -67,97 +81,79 @@ public class levelActivity extends AppCompatActivity implements
         mainView.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                region = GetRegionPressed((int)event.getX(), (int)event.getY());
-                if(event.getPointerCount() == 2) {
-                    System.out.println("Detecting 2 fingers!");
-                    for(int i = 0; i < event.getPointerCount(); ++i) {
-                        float x = event.getX(i);
-                        float y = event.getY(i);
-                        if(movementRegion.contains((int)x, (int)y)) {
-                            region = GetRegionPressed((int) x, (int) y);
-                            if (jumpTimerHandler != null) {
-                                return true;
-                            }
-                            jumpTimerHandler = new Handler();
-                            jumpTimerHandler.postDelayed(jumpTimer, 500);
-                            if (region == 1) {
-                                hero.setxVelocity(Constants.heroRunningSpeed);
-                                System.out.println("X Velocity was set!");
-                            } else if (region == 2) {
-                                hero.setxVelocity(Constants.heroWalkingSpeed);
-                                System.out.println("X Velocity was set!");
-                            } else if (region == 3) {
-                                hero.setxVelocity(Constants.heroWalkingSpeed * -1);
-                                System.out.println("X Velocity was set!");
-                            } else if (region == 4) {
-                                hero.setxVelocity(Constants.heroRunningSpeed * -1);
-                                System.out.println("X Velocity was set!");
-                            } else {
-                                return gestureDetector.onTouchEvent(event);
-                            }
-                        }
-                    }
-                    return true;
-                } else if(region == 5) {
-                    return gestureDetector.onTouchEvent(event);
-                } else {
-                    switch (event.getAction()) {
-                        case MotionEvent.ACTION_DOWN: // Initial Press
-                            v.performClick();
-                            if (moveHandler != null)
+                v.performClick();
+                region = GetRegionPressed((int) event.getX(), (int) event.getY());
+                if (event.getPointerCount() <= 2 && region != 5) {
+                    switch (event.getAction() & MotionEvent.ACTION_MASK) {
+                        case MotionEvent.ACTION_DOWN:
+                            if (moveHandler != null || !hero.isOnGround())
                                 return true;
                             moveHandler = new Handler();
                             moveHandler.postDelayed(moveAction, 0);
                             break;
+                        case MotionEvent.ACTION_POINTER_DOWN:
+                            secondaryX = (int) event.getX(1);
+                            secondaryY = (int) event.getY(1);
+                            break;
                         case MotionEvent.ACTION_MOVE: // While held and finger isn't steady
-                            if (moveHandler == null)
+                            if (moveHandler == null || !hero.isOnGround())
                                 return true;
-                            else if (region == 1)
+                            else if (region == 1) {
+                                hero.setxVelocity(Constants.heroRunningSpeed);
                                 currentRegion = sprintRegionR;
-                            else if (region == 2)
+                            } else if (region == 2) {
+                                hero.setxVelocity(Constants.heroWalkingSpeed);
                                 currentRegion = walkRegionR;
-                            else if (region == 3)
+                            } else if (region == 3) {
+                                hero.setxVelocity(Constants.heroWalkingSpeed * -1);
                                 currentRegion = walkRegionL;
-                            else if (region == 4)
+                            } else if (region == 4) {
+                                hero.setxVelocity(Constants.heroRunningSpeed * -1);
                                 currentRegion = sprintRegionL;
+                            }
                             if (!currentRegion.contains((int) event.getX(), (int) event.getY())) {
                                 moveHandler.removeCallbacks(moveAction);
                                 moveHandler = null;
                             }
                             break;
+                        case MotionEvent.ACTION_POINTER_UP:
+                            int deltaX = abs((int) (secondaryX - event.getX(1)));
+                            int deltaY = abs((int) (secondaryY - event.getY(1)));
+                            if (deltaY > deltaX) { // Swipe is vertical
+                                if (secondaryY > event.getY(1)) {
+                                    if(hero.isOnGround()) {
+                                        if (jumpHandler != null)
+                                            return true;
+                                        jumpHandler = new Handler();
+                                        jumpHandler.postDelayed(jumpAction, 0);
+                                    }
+                                }
+                            }
+                            return gestureDetector.onTouchEvent(event);
                         case MotionEvent.ACTION_UP: // Touch released
                             if (moveHandler == null)
                                 return true;
                             moveHandler.removeCallbacks(moveAction);
                             moveHandler = null;
+                            hero.setxVelocity(0);
                             break;
                     }
                     return true;
-                }
+                } else
+                    return gestureDetector.onTouchEvent(event);
             }
             Runnable moveAction = new Runnable() { // Runnable that repeatedly calls move functions
                 @Override
                 public void run() {
-                    if(region == 1)
+                    if (region == 1)
                         hero.SprintRight(movementRegion, width);
-                    else if(region == 2)
+                    else if (region == 2)
                         hero.WalkRight(movementRegion, width);
-                    else if(region == 3)
+                    else if (region == 3)
                         hero.WalkLeft(movementRegion, width);
-                    else if(region == 4)
+                    else if (region == 4)
                         hero.SprintLeft(movementRegion, width);
                     moveHandler.postDelayed(this, 20);
-                }
-            };
-            Runnable jumpTimer = new Runnable() { // Runnable that waits 1 second
-                @Override
-                public void run() {
-                    if(hero.isOnGround()) {
-                        hero.setxVelocity(0);
-                    }
-                    jumpTimerHandler.removeCallbacks(jumpTimer);
-                    jumpTimerHandler = null;
-                    System.out.println("Jump Timer Resolved!");
                 }
             };
         });
@@ -185,7 +181,6 @@ public class levelActivity extends AppCompatActivity implements
 
     @Override
     public boolean onDown(MotionEvent event) {
-
         return true;
     }
 
@@ -219,7 +214,7 @@ public class levelActivity extends AppCompatActivity implements
     Runnable jumpAction = new Runnable() {
         @Override
         public void run() {
-            hero.Jump(floorRegion, height);
+            hero.Jump(floorRegion, movementRegion, width, height);
             if(!hero.isFinishedJump())
                 jumpHandler.postDelayed(jumpAction, 20);
             else {
@@ -267,7 +262,6 @@ public class levelActivity extends AppCompatActivity implements
 
     @Override
     public boolean onSingleTapConfirmed(MotionEvent event) {
-
         return true;
     }
 }

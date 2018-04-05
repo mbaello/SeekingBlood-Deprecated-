@@ -6,7 +6,6 @@ import android.widget.ImageView;
 class Hero extends Entity {
     private boolean finishedJump;
     private ImageView heroView;
-    private int heightPreJump;
     private float stamina;
     private float reserve;
 
@@ -49,14 +48,6 @@ class Hero extends Entity {
 
     public void setHeroViewY(float y) {
         heroView.setY(y);
-    }
-
-    public int getHeightPreJump() {
-        return heightPreJump;
-    }
-
-    public void setHeightPreJump(int heightPreJump) {
-        this.heightPreJump = heightPreJump;
     }
 
     public float getStamina() {
@@ -119,8 +110,7 @@ class Hero extends Entity {
         return ((floorRegion.contains(0, y)));
     }
 
-    protected void Jump(Rect floorRegion, int height) {
-        System.out.println("Inside Jump Function!");
+    protected void Jump(Rect floorRegion, Rect movementRegion, int width, int height) {
         int x = (int)this.getHeroViewX();
         int y = (int)this.getHeroViewY();
         x += this.getxVelocity();
@@ -128,15 +118,18 @@ class Hero extends Entity {
         this.setyVelocity(this.getyVelocity() + Constants.gravity);
         if(this.isOnGround()) {
             this.setOnGround(false);
-            this.setHeroViewX(x);
             this.setHeroViewY(y);
+            if(ValidMove(movementRegion, width, x))
+                this.setHeroViewX(x);
         } else if (!ReachedGround(floorRegion, y)) {
-            this.setHeroViewX(x);
             this.setHeroViewY(y);
+            if(ValidMove(movementRegion, width, x))
+                this.setHeroViewX(x);
         } else {
             this.setOnGround(true);
             this.setHeroViewY(height / 2);
             this.setyVelocity(Constants.defaultJumpVelocity);
+            this.setxVelocity(0);
             finishedJump = true;
         }
     }
