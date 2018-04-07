@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/willlucic/Documents/GitHub/SeekingBlood/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hi/values-hi.xml",
+            "outputFile": "/Users/willlucic/Code Projects/GitHub/SeekingBlood/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hi/values-hi.xml",
             "map": [
                 {
                     "source": "/Users/willlucic/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/1eaa219b847e76e7d1e0b06a5f5eb010/res/values-hi/values-hi.xml",
