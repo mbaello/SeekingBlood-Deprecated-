@@ -1,4 +1,4 @@
-#Wed Apr 04 18:13:39 PDT 2018
-base.0=D\:\\Repositories\\SeekingBlood\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+#Sat Apr 07 22:01:32 PDT 2018
+base.0=/Users/willlucic/Code Projects/GitHub/SeekingBlood/app/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex

@@ -1,107 +1,203 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:2:1-21:12
-INJECTED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:2:1-21:12
-INJECTED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:2:1-21:12
-INJECTED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:2:1-21:12
-MERGED from [com.android.support:appcompat-v7:27.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.0.aar\2763b0e564c065db20b5743d71b6886c\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\665e65a321b5ed7fc0f31aceffe80779\AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:support-fragment:27.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.0.aar\55027fca85f2a817c4ea67a2cc416815\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:27.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.0.aar\56386aa639ae439bd6f249e043cbcb97\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.0.aar\40fb9aa58c93d0a43e0af0332a4902c9\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.0.aar\971122aab481140cce37a888bcc55c70\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.0.aar\e28b25ffc27950ad56b26e025975aa2d\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.0.aar\badfb415476709f7a4aa6f9f77792c40\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\972bfcfac4bb7a66c604bf39efa66e29\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\031a4e67072f25032385616473aaacd9\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\8a61f1ad1299aa780122514faea49c01\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\d91d80ad695d7b6695022f12c6a63b41\AndroidManifest.xml:17:1-22:12
-INJECTED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:2:1-21:12
-INJECTED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:2:1-21:12
-INJECTED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:2:1-21:12
+ADDED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml:2:1-23:12
+MERGED from [com.android.support:appcompat-v7:27.1.0] /Users/willlucic/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/7ef8c67255b465b07d9158064a7ef9e3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/willlucic/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/0e2ab45c4ebfc745757befa8ebbf7cfa/AndroidManifest.xml:2:1-11:12
+MERGED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-71:12
+MERGED from [com.android.support:support-fragment:27.1.0] /Users/willlucic/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.0.aar/bcde1ffa6c8c67cfd3d6a2d38338fce9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.0] /Users/willlucic/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.0.aar/18e7714b4e6bc63fe9356113b4872078/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.0] /Users/willlucic/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.0.aar/2bd9fd8f07e772801fda53c837d9d815/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.0] /Users/willlucic/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.0.aar/92ca735f8894075bf2c004e4c2f99b11/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.0] /Users/willlucic/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.0.aar/66c205734d7a414f16377ca57f632ee9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.0] /Users/willlucic/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/7d0af6057540ed4d8df3d352d625c4a8/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/willlucic/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/14bd230d7981838df483102355f268d1/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/willlucic/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/3319c14461ea022d812f08f1f2b6970e/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/willlucic/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/ef3aa03ccc16f3ecaecdc2bef5b0582c/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /Users/willlucic/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/6919b1769124fdf969345ec1c785502f/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml:2:1-23:12
 	package
-		ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:3:5-38
-		INJECTED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml
+		ADDED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml:4:5-38
+		INJECTED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml
-		ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:2:1-21:12
-		INJECTED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml
+		INJECTED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml
+		ADDED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml:2:1-23:12
+		INJECTED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml
-		ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:2:1-21:12
-		INJECTED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml
+		INJECTED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml
+		ADDED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml:2:1-23:12
+		INJECTED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:5:5-19:19
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\665e65a321b5ed7fc0f31aceffe80779\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\665e65a321b5ed7fc0f31aceffe80779\AndroidManifest.xml:9:5-20
+ADDED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml:6:5-21:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/willlucic/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/0e2ab45c4ebfc745757befa8ebbf7cfa/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/willlucic/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/0e2ab45c4ebfc745757befa8ebbf7cfa/AndroidManifest.xml:9:5-20
+MERGED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:32:5-69:19
+MERGED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:32:5-69:19
 	android:supportsRtl
-		ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml:12:9-35
 	android:label
-		ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml:10:9-41
 	android:roundIcon
-		ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:9:9-54
+		ADDED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml:11:9-54
 	android:icon
-		ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:7:9-43
+		ADDED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml:9:9-43
+		REJECTED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:34:9-42
 	android:allowBackup
-		ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml:7:9-35
+	android:banner
+		ADDED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:33:9-46
 	android:theme
-		ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:11:9-40
+		ADDED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml:13:9-40
+		REJECTED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:37:9-50
+	android:isGame
+		ADDED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:35:9-30
+	tools:replace
+		ADDED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml:8:9-51
 activity#sp18.cs370.seekingblood.levelActivity
-ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:12:9-17:20
+ADDED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml:14:9-19:20
 	android:name
-		ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:12:19-47
+		ADDED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml:14:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:13:13-16:29
+ADDED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml:15:13-18:29
 action#android.intent.action.MAIN
-ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:14:17-69
+ADDED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml:16:17-69
 	android:name
-		ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:14:25-66
+		ADDED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml:16:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:15:17-77
+ADDED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml:17:17-77
 	android:name
-		ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:15:27-74
+		ADDED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml:17:27-74
 activity#sp18.cs370.seekingblood.titleActivity
-ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:18:9-60
+ADDED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml:20:9-60
 	android:name
-		ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml:18:19-48
+		ADDED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml:20:19-48
 uses-sdk
-INJECTED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml
-INJECTED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml
-MERGED from [com.android.support:appcompat-v7:27.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.0.aar\2763b0e564c065db20b5743d71b6886c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.0.aar\2763b0e564c065db20b5743d71b6886c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\665e65a321b5ed7fc0f31aceffe80779\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\665e65a321b5ed7fc0f31aceffe80779\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:support-fragment:27.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.0.aar\55027fca85f2a817c4ea67a2cc416815\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.0.aar\55027fca85f2a817c4ea67a2cc416815\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.0.aar\56386aa639ae439bd6f249e043cbcb97\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.0.aar\56386aa639ae439bd6f249e043cbcb97\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.0.aar\40fb9aa58c93d0a43e0af0332a4902c9\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.0.aar\40fb9aa58c93d0a43e0af0332a4902c9\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.0.aar\971122aab481140cce37a888bcc55c70\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.0.aar\971122aab481140cce37a888bcc55c70\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.0.aar\e28b25ffc27950ad56b26e025975aa2d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.0.aar\e28b25ffc27950ad56b26e025975aa2d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.0.aar\badfb415476709f7a4aa6f9f77792c40\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.0.aar\badfb415476709f7a4aa6f9f77792c40\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\972bfcfac4bb7a66c604bf39efa66e29\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\972bfcfac4bb7a66c604bf39efa66e29\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\031a4e67072f25032385616473aaacd9\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\031a4e67072f25032385616473aaacd9\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\8a61f1ad1299aa780122514faea49c01\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\8a61f1ad1299aa780122514faea49c01\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\d91d80ad695d7b6695022f12c6a63b41\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Marc\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\d91d80ad695d7b6695022f12c6a63b41\AndroidManifest.xml:20:5-44
-INJECTED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml
-INJECTED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml
+INJECTED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml
+INJECTED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:27.1.0] /Users/willlucic/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/7ef8c67255b465b07d9158064a7ef9e3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.0] /Users/willlucic/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/7ef8c67255b465b07d9158064a7ef9e3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/willlucic/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/0e2ab45c4ebfc745757befa8ebbf7cfa/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/willlucic/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/0e2ab45c4ebfc745757befa8ebbf7cfa/AndroidManifest.xml:5:5-7:41
+MERGED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:9:5-47
+MERGED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:9:5-47
+MERGED from [com.android.support:support-fragment:27.1.0] /Users/willlucic/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.0.aar/bcde1ffa6c8c67cfd3d6a2d38338fce9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.0] /Users/willlucic/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.0.aar/bcde1ffa6c8c67cfd3d6a2d38338fce9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.0] /Users/willlucic/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.0.aar/18e7714b4e6bc63fe9356113b4872078/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.0] /Users/willlucic/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.0.aar/18e7714b4e6bc63fe9356113b4872078/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.0] /Users/willlucic/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.0.aar/2bd9fd8f07e772801fda53c837d9d815/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.0] /Users/willlucic/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.0.aar/2bd9fd8f07e772801fda53c837d9d815/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.0] /Users/willlucic/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.0.aar/92ca735f8894075bf2c004e4c2f99b11/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.0] /Users/willlucic/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.0.aar/92ca735f8894075bf2c004e4c2f99b11/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.0] /Users/willlucic/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.0.aar/66c205734d7a414f16377ca57f632ee9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.0] /Users/willlucic/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.0.aar/66c205734d7a414f16377ca57f632ee9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.0] /Users/willlucic/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/7d0af6057540ed4d8df3d352d625c4a8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.0] /Users/willlucic/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/7d0af6057540ed4d8df3d352d625c4a8/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/willlucic/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/14bd230d7981838df483102355f268d1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/willlucic/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/14bd230d7981838df483102355f268d1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/willlucic/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/3319c14461ea022d812f08f1f2b6970e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/willlucic/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/3319c14461ea022d812f08f1f2b6970e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/willlucic/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/ef3aa03ccc16f3ecaecdc2bef5b0582c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/willlucic/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/ef3aa03ccc16f3ecaecdc2bef5b0582c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/willlucic/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/6919b1769124fdf969345ec1c785502f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/willlucic/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/6919b1769124fdf969345ec1c785502f/AndroidManifest.xml:20:5-44
+INJECTED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml
+INJECTED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml
-		ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml
+		INJECTED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml
+		ADDED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml
-		ADDED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Repositories\SeekingBlood\app\src\main\AndroidManifest.xml
+		INJECTED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml
+		ADDED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml
+		MERGED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/willlucic/Code Projects/GitHub/SeekingBlood/app/src/main/AndroidManifest.xml
+supports-screens
+ADDED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-16:40
+	android:largeScreens
+		ADDED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:13:9-36
+	android:smallScreens
+		ADDED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:15:9-36
+	android:normalScreens
+		ADDED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:14:9-37
+	android:xlargeScreens
+		ADDED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:16:9-37
+	android:anyDensity
+		ADDED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:9-34
+uses-feature#0x00020000
+ADDED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:18:5-54
+	android:glEsVersion
+		ADDED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:18:19-51
+uses-permission#android.permission.INTERNET
+ADDED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:20:5-67
+	android:name
+		ADDED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:20:22-64
+uses-feature#android.hardware.touchscreen
+ADDED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:22:5-24:36
+	android:required
+		ADDED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:24:9-33
+	android:name
+		ADDED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:23:9-52
+uses-feature#android.hardware.touchscreen.multitouch
+ADDED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:25:5-27:36
+	android:required
+		ADDED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:27:9-33
+	android:name
+		ADDED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:26:9-63
+uses-feature#android.hardware.touchscreen.multitouch.distinct
+ADDED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:28:5-30:36
+	android:required
+		ADDED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:30:9-33
+	android:name
+		ADDED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:29:9-72
+activity#com.FeffJishers.Unity.UnityPlayerActivity
+ADDED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:38:9-55:20
+	android:screenOrientation
+		ADDED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:43:13-51
+	android:label
+		ADDED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:41:13-45
+	android:launchMode
+		ADDED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:42:13-44
+	android:configChanges
+		ADDED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:40:13-194
+	android:name
+		ADDED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:39:13-69
+meta-data#unityplayer.UnityActivity
+ADDED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:52:13-54:40
+	android:value
+		ADDED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:54:17-37
+	android:name
+		ADDED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:53:17-57
+meta-data#unity.build-id
+ADDED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:57:9-59:68
+	android:value
+		ADDED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:59:13-65
+	android:name
+		ADDED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:58:13-42
+meta-data#unity.splash-mode
+ADDED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:60:9-62:33
+	android:value
+		ADDED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:62:13-30
+	android:name
+		ADDED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:61:13-45
+meta-data#unity.splash-enable
+ADDED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:63:9-65:36
+	android:value
+		ADDED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:65:13-33
+	android:name
+		ADDED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:64:13-47
+meta-data#android.max_aspect
+ADDED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:66:9-68:35
+	android:value
+		ADDED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:68:13-32
+	android:name
+		ADDED from [:Unity] /Users/willlucic/Code Projects/GitHub/SeekingBlood/Unity/build/intermediates/manifests/full/debug/AndroidManifest.xml:67:13-46
